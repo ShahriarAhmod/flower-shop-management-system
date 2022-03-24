@@ -85,7 +85,7 @@ const AddFlower = () => {
           id=""
         />
 
-        <button className="btn btn-secondary mt-4 w-100" onClick={AddFlower}>
+        <button className="btn btn-success mt-4 w-100" onClick={AddFlower}>
           Add flower
         </button>
       </div>

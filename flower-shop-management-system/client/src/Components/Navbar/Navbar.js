@@ -13,7 +13,7 @@ const Navbar = () => {
             <ul className="navbar-nav mx-auto">
               <li className="nav-item">
                 <Link
-                  to="/Home"
+                  to="/"
                   className=" fs-4 text-light text-decoration-none "
                   style={{ cursor: "pointer" }}
                 >
