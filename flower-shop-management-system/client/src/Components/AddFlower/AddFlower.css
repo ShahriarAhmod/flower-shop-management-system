@@ -8,3 +8,17 @@
     background-position: center;
     margin-top: 0px;
   }
+
+  .textStyle{
+   
+        font-family: 'Courgette', cursive;
+  }
+
+  .addButton{
+      background-color: #3E162F ;
+  }
+  .addButton:hover {
+    border: 1px solid #fff;
+    background-color: #111;
+    transition: 1s;
+  }

@@ -46,35 +46,34 @@ const AddFlower = () => {
 
   return (
     <div className="bg">
-      <h1>Add Flowers</h1>
+      <h1 className="textStyle">Add Flowers</h1>
       <div
-        className="container mt-4 mb-5 pb-5 text-start"
-        style={{ maxWidth: "25%" }}
+        className="container mx-auto p-5 text-start"
+        style={{ maxWidth: "25%", 'backgroundColor' : '#988691'}}
       >
-        <h5 className="mt-3 ">flower Name:</h5>
+        <h5 className="mt-3 ">Flower Name:</h5>
         <input
-  
           onChange={handleFlowerName}
-          className="form-control"
+          className="form-control rounded-pill"
          
           type="text"
           name="Name"
           id=""
         />
 
-        {/* <h5 className="mt-3">Image URL:</h5>
+        <h5 className="mt-3">Image:</h5>
         <input
           onChange={handleImageUrl}
-          className="form-control"
+          className="form-control rounded-pill"
           type="text"
           name="Image_URL"
           id=""
-        /> */}
+        />
 
         <h5 className="mt-3">Description:</h5>
         <input
           onChange={handleDescription}
-          className="form-control"
+          className="form-control rounded-pill"
           type="text"
           name="Description"
           id=""
@@ -83,15 +82,17 @@ const AddFlower = () => {
         <h5 className="mt-3">Price:</h5>
         <input
           onChange={handlePrice}
-          className="form-control"
+          className="form-control rounded-pill"
           type="number"
           name="text"
           id=""
         />
 
-        <button className="btn btn-secondary mt-4 w-100" onClick={AddFlower}>
+        <div className="text-center">
+          <button className="btn mt-4 rounded-pill fw-bold px-4 py-2 text-light addButton " onClick={AddFlower}>
           Add flower
         </button>
+        </div>
       </div>
     </div>
   );
