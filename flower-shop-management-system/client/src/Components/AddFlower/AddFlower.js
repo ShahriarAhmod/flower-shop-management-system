@@ -1,6 +1,8 @@
 import React from "react";
 import { useState } from "react";
 import Axios from "axios";
+import './AddFlower.css'
+
 
 const AddFlower = () => {
   const [flowerName, setFlowerName] = useState("");
@@ -43,7 +45,7 @@ const AddFlower = () => {
   };
 
   return (
-    <div>
+    <div className="bg">
       <h1>Add Flowers</h1>
       <div
         className="container mt-4 mb-5 pb-5 text-start"
@@ -51,8 +53,10 @@ const AddFlower = () => {
       >
         <h5 className="mt-3 ">flower Name:</h5>
         <input
+  
           onChange={handleFlowerName}
           className="form-control"
+         
           type="text"
           name="Name"
           id=""
@@ -85,7 +89,7 @@ const AddFlower = () => {
           id=""
         />
 
-        <button className="btn btn-success mt-4 w-100" onClick={AddFlower}>
+        <button className="btn btn-secondary mt-4 w-100" onClick={AddFlower}>
           Add flower
         </button>
       </div>

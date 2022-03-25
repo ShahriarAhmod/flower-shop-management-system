@@ -1,12 +1,13 @@
 import React from 'react';
+import './Footer.css';
 
 
 
 const Footer = () => {
     return (
-        <div className="pb-3 " style={{ backgroundColor: 'rgb(82, 122, 122)' }}>
+        <div className="pb-3 " style={{ backgroundColor: 'rgb(148, 35, 69)' }}>
             
-            <h2 className="pt-2 fw-bold" style={{ color: 'rgb(209, 224, 224)' }}>Florista</h2>
+            <h2 className="pt-4  title fs-1" style={{ color: 'rgb(209, 224, 224)' }}>Florista</h2>
             <div className="d-flex align-items-center justify-content-evenly p-2">
                 <div classname="">
                     <div className="text-light">
@@ -41,7 +42,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <h6 className="pb-2 text-light">Copyright <i class="far fa-copyright"></i> by Florista</h6>
+            <h6 className="pb-2 text-light">Copyright <i class="far fa-copyright"></i> by <span className="title fs-5" style={{ color: 'rgb(209, 224, 224)' }}>Florista</span></h6>
         </div>
     );
 };

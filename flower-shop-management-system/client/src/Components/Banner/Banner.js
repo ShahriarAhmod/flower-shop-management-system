@@ -1,10 +1,10 @@
 import React from 'react';
-import BannerImg from '../../images/banner.jpg';
+import BannerImg from '../../images/banner.png';
 
 const Banner = () => {
     return (
-        <div style= {{'backgroundColor': 'rgb(212, 197, 205)'}}>
-            <img className="" src={BannerImg} alt="" style={{width: '700px' }}/>
+        <div>
+            <img className="" src={BannerImg} alt="" style={{width: '100%', height: '90vh'}}/>
         </div>
     );
 };
